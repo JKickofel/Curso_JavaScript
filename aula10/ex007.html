@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+
+    <style>/*CSS ponto e vírgula é obrigatório*/
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+        }
+        /*formatando o resultado usando a div res*/
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Somando Valores</h1><!--interface básica-->
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick = "somar()">
+    <div id="res">Resultado:</div>
+
+    <script>//javascript
+        function somar() {
+            let tn1 = document.getElementById('txtn1');
+            let tn2 = document.querySelector('input#txtn2');
+            let res = document.getElementById('res')
+            //esse Number transforma número em string.
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            //abaixo use o acento de crase!!! `Bla bla bla ${variável}`
+            //<strong>bla bla bla</strong> é como deixa em negrito
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+        }
+    </script>
+
+</body>
+</html>

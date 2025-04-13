@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body {
+            background-color: rgb(200, 142, 255);
+            color: rgb(0, 0, 0);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando os estudos com DOM</h1>
+    <p>Aqui vai o test.</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <!--Aqui está a div usada mais embaixo no exemplo-->
+    <div id="msg">Esse é o exemplo.</div>
+    <script>
+        let corpo = window.document.body
+        let p1 = window.document.getElementsByTagName("p")[0]
+        /*let d = window.document.getElementById('msg')//o mesmo serve para getElementByName("msg"), é só trocar o id porname ali.
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'*/
+        var d = document.querySelector('div#msg')
+        d.style.color = 'blue'//formatei as letras
+    </script>
+</body>
+</html>

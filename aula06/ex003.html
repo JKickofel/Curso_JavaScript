@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: yellow;
+            color: black;
+            font:normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, mundo!</h1>
+   <p>E tente sobreviver.</p>
+   <script>
+      var n1 = Number(window.prompt("Digite um número: ")) // o Number() converteu a string em número
+      var n2 = Number(window.prompt("Digite outro número: "))
+      var soma = n1 + n2
+      window.alert(`A soma de ${n1} mais ${n2} é igual a ${soma}.`)
+      /*(number + number) para adição
+      (string + string) para concatenação
+      é necessário converter a string em número para somar de verdade*/
+
+   </script>
+</body>
+</html>
